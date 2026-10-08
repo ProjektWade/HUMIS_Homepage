@@ -1,0 +1,8 @@
+:root {
+    --burgandy: #A12D37;
+}
+
+h1 {
+    color: var(--burgandy);
+    font-size: 4rem;
+}

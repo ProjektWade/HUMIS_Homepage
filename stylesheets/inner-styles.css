@@ -31,6 +31,8 @@ body {
                     border-right: 1px solid var(--green);
 
                     nav {
+                        margin-top: 20px;
+
                         a {
                             display: block;
                             color: black;
@@ -62,7 +64,47 @@ body {
                     padding: 5px 20px;
 
                     nav {
-                        text-align: right;
+                        gap: 5px;
+                        display: flex;
+                        justify-content: flex-end;
+                        font-size: 10px;
+
+                        a {
+                            color: black;
+                            text-decoration: none;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+
+                        &.bottom-nav {
+                            text-transform: lowercase;
+
+                        }
+
+                        &.top-nav {
+                            text-transform: uppercase;
+
+                        }
+                    }
+
+                    main {
+                        font-size: 1.1rem;
+                        #ABT-US {
+                            color: #292827;
+                        }
+                        border: 1px dotted black;
+
+
+                        img {
+                            &.pull-right {
+                                float: right;
+                                width: 150px;
+                                margin: 0 0 15px;
+                                corner-shape: round;
+                            }
+                        }
                     }
                 }
             }
@@ -74,8 +116,6 @@ body {
             font-size: 11px;
             text-align: center;
             padding: 10px 0;
-            flex-direction: row;
-            justify-content: flex-end;
         }
     }
 }
