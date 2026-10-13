@@ -12,6 +12,11 @@ body {
         width: 780px;
         min-height: 600px;
 
+        header {
+            img {
+                display: block;
+            }
+        }
         section.middle {
             display: flex;
 
@@ -53,6 +58,7 @@ body {
                 .links {
                     display: flex;
                     flex-direction: column;
+                    margin-bottom: 2rem;
                 }
 
                 &.right-side {
@@ -90,19 +96,26 @@ body {
                     }
 
                     main {
-                        font-size: 1.1rem;
+                        padding: 10px;
+                        font-size: 0.9rem;
+
                         #ABT-US {
-                            color: #292827;
+                            color: black;
+                            font-size: 40px;
                         }
+
                         border: 1px dotted black;
 
 
                         img {
                             &.pull-right {
                                 float: right;
-                                width: 150px;
-                                margin: 0 0 15px;
-                                corner-shape: round;
+                                width: 170px;
+                                margin: 0 0 15px 15px;
+                            }
+                            .Video-Under-Image {
+                                font-size: 200px;
+                                color: red;
                             }
                         }
                     }
