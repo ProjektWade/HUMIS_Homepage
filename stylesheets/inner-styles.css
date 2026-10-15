@@ -73,7 +73,7 @@ body {
                     flex-direction: column;
                     padding: 5px 20px;
 
-                    nav {
+                    nav.secondary {
                         gap: 5px;
                         display: flex;
                         justify-content: flex-end;
@@ -100,10 +100,9 @@ body {
                     }
 
                     main {
-                        padding: 10px;
-                        font-size: 0.9rem;
+                        min-height: 600px
 
-                        #ABT-US {
+                        #about-us {
                             color: black;
                             font-size: 40px;
                         }
