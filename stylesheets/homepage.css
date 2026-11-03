@@ -64,7 +64,7 @@ body {
                 padding: 10px 10px 10px 15px;
 
                 aside {
-                    border: 1px solid black;
+                    border: 0 solid black;
 
                     &.left {
                         width: 30%;
@@ -81,7 +81,7 @@ body {
                                 font-size: 10px;
 
                                 &:hover {
-                                    background-color: black;
+                                    background-color: #676E3D;
                                     color: white;
                                 }
                             }
@@ -131,7 +131,7 @@ body {
         }
 
         footer {
-            background-color: green;
+            background-color: #616643;
             color: white;
             font-size: 11px;
             text-align: center;
