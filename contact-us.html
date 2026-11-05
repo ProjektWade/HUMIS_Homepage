@@ -11,9 +11,9 @@
               display: flex;
               gap: 10px;
               font-size: 11px;
-              border-bottom: 2px solid black;
-              padding-bottom: 15px;
-              margin-bottom: 15px;
+              border-bottom: 2px solid var(--burgandy);
+              padding-bottom: 3px;
+              padding-top: 15px;
 
               a {
                   color: var(--burgandy);
@@ -26,7 +26,8 @@
               }
           }
 
-          .fellamir-putin {
+          .telephone {
+              padding-top: 10px;
               display: flex;
               flex-direction: column;
               justify-content: center;
@@ -119,7 +120,7 @@
         </nav>
 
         <section class="content">
-          <img class="fellamir-putin"
+          <img class="telephone"
                src="https://images.icon-icons.com/909/PNG/512/telephone_icon-icons.com_70849.png"
                alt="African Putin idk" />
           <h3>Contact Information</h3>
@@ -163,10 +164,11 @@
           </label>
           <label>
             Phone:
-            <input type="text" name="name" placeholder="Enter your name" />
+            <input type="text" name="phone-number" placeholder="Enter your number" />
           </label>
           <label>
-            <input type="checkbox" name="call-via-phone" />
+            Do you have a phone?
+            <input type="checkbox" name="call-via-phone"/>
           </label>
 
           <p>How would you prefer to be contacted?</p>
