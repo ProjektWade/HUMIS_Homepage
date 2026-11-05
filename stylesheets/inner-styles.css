@@ -1,3 +1,7 @@
+@import 'images.css';
+@import 'typography.css';
+@import 'layouts.css';
+
 :root {
     --green: #676E3D;
 }
@@ -7,6 +11,7 @@ body {
     display: flex;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
+
     section.container {
         background-color: #fff;
         width: 780px;
@@ -17,9 +22,9 @@ body {
                 display: block;
             }
         }
+
         section.middle {
             display: flex;
-
 
             > * {
                 border-top: 2px solid indianred;
@@ -47,7 +52,7 @@ body {
                             padding: 10px 0 10px 10px;
                             font-size: 10px;
 
-                            &:hover {
+                            &:hover { /* Pseudo-class */
                                 background-color: black;
                                 color: white;
                             }
@@ -69,7 +74,7 @@ body {
                     width: 70%;
                     min-height: 600px;
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: space-evenly;
                     flex-direction: column;
                     padding: 5px 20px;
 
@@ -95,28 +100,39 @@ body {
 
                         &.top-nav {
                             text-transform: uppercase;
+                            align-items: end;
 
                         }
                     }
 
                     main {
-                        min-height: 600px
+                        min-height: 600px;
 
-                        #about-us {
+                        #ABT-US {
                             color: black;
                             font-size: 40px;
                         }
 
-                        border: 1px dotted black;
-
+                        div.image-with-underneath-text {
+                            float: right;
+                            width: 170px;
+                            margin: 0 0 15px 15px;
+                        }
 
                         img {
                             &.pull-right {
                                 float: right;
                                 width: 170px;
-                                margin: 0 0 15px 15px;
-                                border: 1px solid black;
+                                text-align: center;
+                                color: red;
                             }
+                        }
+
+                        a.underneath-text {
+                            display: block;
+                            text-align: center;
+                            color: red;
+                            text-decoration: underline;
                         }
                     }
                 }

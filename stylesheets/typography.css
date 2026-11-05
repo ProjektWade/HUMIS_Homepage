@@ -43,6 +43,25 @@ body {
     p {
         text-align: justify;
         font-size: 0.75rem;
-        margin-bottom: 0;
+
+        &.learn-more {
+            text-align: right;
+
+            a {
+                color: var(--burgandy);
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline
+                }
+            }
+        }
+
+        // @todo, make a betetr name lil bro
+
+        .shrug {
+            font-size: 1.25rem;
+            color: var(--burgandy);
+        }
     }
 }

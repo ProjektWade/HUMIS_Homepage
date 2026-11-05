@@ -1,0 +1,40 @@
+main {
+
+    aside.pull {
+        display: inline-block;
+        max-width: 150px;
+
+        > img {
+            width: 100%;
+        }
+
+        &.left {
+            float: left;
+            margin: 5px 15px 5px 0;
+
+            img {
+                border-radius: 10px 0 10px 0;
+            }
+        }
+
+
+        &.right {
+            float: right;
+            margin: 0 0 5px 15px;
+
+            img {
+                border-radius: 10px 0 10px 0;
+            }
+        }
+
+        h6 {
+            text-align: center;
+        }
+
+        &:hover {
+            h6 {
+                text-decoration: underline;
+            }
+        }
+    }
+}

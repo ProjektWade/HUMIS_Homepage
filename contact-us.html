@@ -4,48 +4,59 @@
   <meta charset="UTF-8">
   <title>HUMIS "inner" pages layout</title>
   <link rel="stylesheet" href="stylesheets/inner-styles.css">
-  <link rel="stylesheet" href="stylesheets/typography.css">
 
   <style>
-    main{
-        nav.inner-nav {
-            display: flex;
-            gap: 10px;
-            font-size: 11px;
-            border-bottom: 2px solid black;
-            padding-bottom: 15px;
-            margin-bottom: 15px;
+      main {
+          nav.inner-nav {
+              display: flex;
+              gap: 10px;
+              font-size: 11px;
+              border-bottom: 2px solid black;
+              padding-bottom: 15px;
+              margin-bottom: 15px;
 
-            a {
-                color: var(--burgandy);
-                text-transform: uppercase;
-                text-decoration: none;
+              a {
+                  color: var(--burgandy);
+                  text-transform: uppercase;
+                  text-decoration: none;
 
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
-        }
-        section.content{
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
+                  &:hover {
+                      text-decoration: underline;
+                  }
+              }
+          }
 
-            h3 {
-                margin: 0;
-            }
+          .fellamir-putin {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              width: 40%;
+              height: 30%;
+          }
 
-            div {
-                h6 {
-                    color: black;
-                }
+          section.content {
+              display: flex;
+              flex-direction: column;
+              gap: 1rem;
 
-                p {
-                    margin: 0;
-                }
-            }
-        }
-    }
+              h3 {
+                  margin: 0;
+              }
+
+              div {
+                  h6 {
+                      color: black;
+                  }
+
+                  p {
+                      margin: 0;
+                  }
+              }
+          }
+
+
+      }
 
 
   </style>
@@ -68,13 +79,13 @@
     <section class="left-side">
       <nav>
         <a href="about-us.html">About us</a>
-        <a href="#">Faculty &amp; Staff</a>
+        <a href="faculty-and-staff.html">Faculty &amp; Staff</a>
         <a href="#">Undergraduate Students</a>
         <a href="#">Graduate Students</a>
         <a href="#">Courses &amp; syllabi</a>
         <a href="#">News &amp; announcement</a>
         <a href="#">Friends &amp; alumni</a>
-        <a href="contact-us.html">Contact us</a>
+        <a href="contact-us.html" class="active">Contact us</a>
       </nav>
 
       <div class="links">
@@ -108,25 +119,28 @@
         </nav>
 
         <section class="content">
+          <img class="fellamir-putin"
+               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgE8pRlnQJigpG8sQzXgjAjNz4h1dGC58I-Dn6v4VuJK2VEqg8sLVdb3g&s=10"
+               alt="African Putin idk" />
           <h3>Contact Information</h3>
 
           <div>
             <h6>U.S. MAIL</h6>
-              <p>
-                University of Utah<br/>
-                Department of History<br/>
-                380 S 1400 E RM 211<br/>
-                Salt Lake City, UT 84112-0311
-              </p>
+            <p>
+              University of Utah<br />
+              Department of History<br />
+              380 S 1400 E RM 211<br />
+              Salt Lake City, UT 84112-0311
+            </p>
           </div>
           <div>
             <h6>CAMPUS MAIL</h6>
-              <p>Department of History
+            <p>Department of History
               211 C HALL</p>
           </div>
           <div>
-              <h6>PHONE</h6>
-              <p>(801) 581-6121</p>
+            <h6>PHONE</h6>
+            <p>(801) 581-6121</p>
           </div>
           <div>
             <h6>FAX</h6>
@@ -140,6 +154,31 @@
             </p>
           </div>
         </section>
+
+        <form class="contact-form">
+          <h6>Can we call you?</h6>
+          <label>
+            Name:
+            <input type="text" name="name" placeholder="Enter your name" />
+          </label>
+          <label>
+            Phone:
+            <input type="text" name="name" placeholder="Enter your name" />
+          </label>
+          <label>
+            <input type="checkbox" name="call-via-phone" />
+          </label>
+
+          <p>How would you prefer to be contacted?</p>
+          <label>
+            <input type="radio" name="contact-preference" value="email"> Email<br />
+          </label>
+          <label>
+            <input type="radio" name="contact-preference" value="email"> Phone<br />
+          </label>
+
+          <button type="Submit">Submit</button>
+        </form>
       </main>
 
       <nav class="secondary bottom-nav">
