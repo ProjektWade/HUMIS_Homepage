@@ -87,6 +87,13 @@ body {
                         a {
                             color: black;
                             text-decoration: none;
+                            border-right: 1px solid black;
+                            padding-right: 5px;
+                            margin-left: 3px;
+
+                            &:last-of-type {
+                                border-right: none
+                            }
 
                             &:hover {
                                 text-decoration: underline;
@@ -95,7 +102,6 @@ body {
 
                         &.bottom-nav {
                             text-transform: lowercase;
-
                         }
 
                         &.top-nav {

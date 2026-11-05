@@ -28,6 +28,7 @@ section.horizontal-two-column-layout {
                         text-decoration: none;
                         color: black;
                         font-size: 0.75rem;
+                        padding-top: 2px;
 
                         &:hover {
                             text-decoration: underline;
@@ -39,6 +40,7 @@ section.horizontal-two-column-layout {
 
                     &.sub {
                         margin-left: 10px;
+                        margin-top: 2px;
                         a {
                             color: red;
                         }

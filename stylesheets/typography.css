@@ -56,12 +56,14 @@ body {
                 }
             }
         }
+        span {
+            &.shrug {
+                font-size: 1.25rem;
+                color: var(--burgandy);
+                font-weight: bold;
 
-        // @todo, make a betetr name lil bro
-
-        .shrug {
-            font-size: 1.25rem;
-            color: var(--burgandy);
+            }
         }
+
     }
 }
