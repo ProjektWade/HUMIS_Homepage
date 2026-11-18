@@ -103,6 +103,20 @@ section.horizontal-two-column-layout {
                 border-radius: 12px;
             }
 
+            .heading-with-icon {
+                display: flex;
+                align-items: center; /* Vertically centers the image with the text */
+                justify-content: flex-start;  /* Forces the image and text to start on the left */
+                text-align: left;
+                gap: 10px;
+                /* Adds space between the image and the text */
+            }
+
+
+            .heading-with-icon img {
+                width: 24px;         /* Adjust size as needed */
+                height: auto;
+            }
 
             p.together {
                 span {

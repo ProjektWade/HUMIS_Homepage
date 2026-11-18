@@ -78,19 +78,12 @@ body {
                     flex-direction: column;
                     padding: 5px 20px;
 
-                    nav.poopy {
-                        margin-left: -10px;
-                    }
 
                     nav.secondary {
                         gap: 5px;
                         display: flex;
                         justify-content: flex-end;
                         font-size: 10px;
-
-
-
-
 
                         a {
                             color: black;
