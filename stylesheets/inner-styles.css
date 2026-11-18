@@ -78,6 +78,10 @@ body {
                     flex-direction: column;
                     padding: 5px 20px;
 
+                    .move-down {
+                        margin-top: 30px;
+                        margin-bottom: -5px;
+                    }
 
                     nav.secondary {
                         gap: 5px;
